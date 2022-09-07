@@ -19,7 +19,7 @@ namespace ogrenciListe.Controllers
                 new Ogrenci(){ogrId=3,ogrNo=132, ogrAdSoyad="Deli KİM", ogrYas=20},
                 new Ogrenci(){ogrId=4,ogrNo=133, ogrAdSoyad="Ayşe CİK", ogrYas=20},
                 new Ogrenci(){ogrId=5,ogrNo=134, ogrAdSoyad="Zeynep ÖĞREN", ogrYas=20},
-                new Ogrenci(){ogrId=6,ogrNo=135, ogrAdSoyad="Naime DAMATAŞI", ogrYas=20}
+                new Ogrenci(){ogrId=6,ogrNo=135, ogrAdSoyad="Leyla DATE", ogrYas=20}
 
             };
             return View( ogrListe );
