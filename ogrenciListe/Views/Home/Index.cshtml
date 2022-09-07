@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ogrenciListe.Models.Ogrenci>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+
+  <div class="container">
+      <div class="row">
+          <div class="col-md-5">
+              <h1> Sınıf Listesi</h1>
+              <table class="table">
+                  <tr class="bg-info">
+                      <td>Sıra No</td>
+                      <td>Numara</td>
+                      <td>Ad SOYAD</td>
+                      <td>Yaş</td>
+                  </tr>
+                  @foreach (var ogr in Model)
+                  {
+                      <tr>
+                          <td>@ogr.ogrId</td>
+                          <td>@ogr.ogrNo</td>
+                          <td>@ogr.ogrAdSoyad</td>
+                          <td>@ogr.ogrYas</td>
+                      </tr>
+                  }
+              </table>
+          </div>
+      </div>
+  </div>
